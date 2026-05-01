@@ -22,29 +22,30 @@
 <body>
 <!-- ADD semantic and validated HTML -->
 <!-- ADD skip to main content -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <button id="theme-toggle" aria-label="Toggle light/dark mode">
-      <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
-        <g clip-path="url(#a)"><path d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531" fill="#333" fill-rule="evenodd"/></g>
-      </svg>
-    </button>
+      <button id="theme-toggle" aria-label="Toggle light/dark mode">
+        <svg width="35px" height="35px" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs><clipPath id="a"><path d="m18.512 18.512h62.977v62.977h-62.977z"/></clipPath></defs>
+          <g clip-path="url(#a)"><path d="m65.098 68.164c-9.2812 7.7266-23.09 7.2422-31.797-1.4648-8.707-8.7031-9.1953-22.516-1.4648-31.793 0.74609-0.89844 2.1016-0.96875 2.9258-0.14453l30.473 30.477c0.82422 0.82422 0.75391 2.1797-0.13672 2.9258m7.168-40.43c-12.297-12.297-32.234-12.297-44.531 0-12.297 12.301-12.297 32.234 0 44.531s32.234 12.297 44.531 0 12.297-32.23 0-44.531" fill="#333" fill-rule="evenodd"/></g>
+        </svg>
+      </button>
 
-      <h1>Civic Lens</h1>
-      <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
-      
-      <nav class="mobile-nav" aria-label="Mobile Navigation">
-        <input type="checkbox" id="menu-toggle" hidden>
-        <label for="menu-toggle" class="menu-button">Menu</label>
-        <ul class="menu">
-          <li><a href="#breaking-news">Breaking News</a></li>
-          <li><a href="#featured-aticles">Featured Articles</a></li>
-          <li><a href="#alerts">Alerts</a></li>
-          <li><a href="#social">Social</a></li>
-        </ul>
-      </nav>
-
+        <h1>Civic Lens</h1>
+        <p class="tagline">See Clearly. Know Deeply. Act Justly.</p>
+        
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+          <input type="checkbox" id="menu-toggle" hidden>
+          <label for="menu-toggle" class="menu-button">Menu</label>
+          <ul class="menu">
+            <li><a href="#breaking-news">Breaking News</a></li>
+            <li><a href="#featured-aticles">Featured Articles</a></li>
+            <li><a href="#alerts">Alerts</a></li>
+            <li><a href="#social">Social</a></li>
+          </ul>
+        </nav>
+    </header>
 
       <main id="main-content">
 
@@ -55,77 +56,111 @@
             <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
         </section>
 
-        <h2>Breaking News</h2>
-
         <section id="breaking-news">
-          <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
-          <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
+          <h2>Breaking News</h2>
 
-          <video controls>
-            <source src="videos/water-management.mp4" type="video/mp4">
-          </video>
-          
-          <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
-          <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
+          <article id="news-story-1" class="news-card" aria-labelledby="story1-title" role="region">
+            <div class="card-content">
+              <h3 id="story1-title">Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
+              <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
+            </div>
 
-          <video controls>
-            <source src="videos/voter-suppression.mp4" type="video/mp4">
-          </video>
+            <video controls>
+              <source src="videos/water-management.mp4" type="video/mp4">
+            </video>
+          </article>
+
+          <article id="news-story-2" class="news-card" aria-labelledby="story2-title" role="region">
+            <div class="card-content">
+              <h3 id="story2-title">Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
+              <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
+            </div>
+            
+            <video controls>
+              <source src="videos/voter-suppression.mp4" type="video/mp4">
+            </video>
+          </article>
         </section>
 
-        <h2>Featured Articles</h2>
-          
-          <section id="featured-articles">
-            <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
-            <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
+        <section id="featured-articles">
+          <h2>Featured Articles</h2>
+
+            <section id="article-1">
+              <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
+              <p>Former employees speak out about ethical breaches in data privacy and surveillance.</p>
+            </section>  
             
-            <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
-            <p>An investigative series on cash bail and its disproportionate impact.</p>
+            <section id="article-2">
+              <h3>Unequal Justice: How Bail Systems Harm the Poor</h3>
+              <p>An investigative series on cash bail and its disproportionate impact.</p>
+            </section>
+
+            <section id="article-3">
+              <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
+              <p>Humanizing the labor that keeps households and economies afloat.</p>
+            </section>
             
-            <h3>Invisible Work: The Lives of Migrant Caregivers</h3>
-            <p>Humanizing the labor that keeps households and economies afloat.</p>
+            <section id="article-4">
+              <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
+              <p>Data visualization showing systemic inequality in real estate today.</p>
+            </section>
             
-            <h3>Redlined Still: A New Map of Modern-Day Housing Discrimination</h3>
-            <p>Data visualization showing systemic inequality in real estate today.</p>
+            <section id="article-5">
+              <h3>Climate Injustice: Who Pays for Pollution?</h3>
+              <p>Communities of color bear the brunt of environmental damage.</p>
+            </section>
             
-            <h3>Climate Injustice: Who Pays for Pollution?</h3>
-            <p>Communities of color bear the brunt of environmental damage.</p>
+            <section id="article-6">
+              <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
+              <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
+            </section>
             
-            <h3>Teaching Under Fire: The Fight for Inclusive Education</h3>
-            <p>Teachers navigate book bans, curriculum restrictions, and culture wars.</p>
+            <section id="article-7">
+              <h3>Food Deserts and Corporate Abandonment</h3>
+              <p>Why access to nutrition is a zip code lottery.</p>
+            </section>  
             
-            <h3>Food Deserts and Corporate Abandonment</h3>
-            <p>Why access to nutrition is a zip code lottery.</p>
+            <section id="article-8">
+              <h3>Policing Mental Health: A Broken Response System</h3>
+              <p>Examining police interactions with those in crisis.</p>
+            </section>  
             
-            <h3>Policing Mental Health: A Broken Response System</h3>
-            <p>Examining police interactions with those in crisis.</p>
+            <section id="article-9">
+              <h3>The Disinformation Economy</h3>
+              <p>Tracing profit motives behind fake news empires.</p>
+            </section>
+
+            <section id="article-10">
+              <h3>Facing the Algorithm: AI and Racial Bias</h3>
+              <p>The coded inequalities that shape our lives.</p>
+            </section>
             
-            <h3>The Disinformation Economy</h3>
-            <p>Tracing profit motives behind fake news empires.</p>
+            <section id="article-11">
+              <h3>The Voting Maze</h3>
+              <p>A guide to understanding your rights amid changing laws.</p>
+            </section>
             
-            <h3>Facing the Algorithm: AI and Racial Bias</h3>
-            <p>The coded inequalities that shape our lives.</p>
-            
-            <h3>The Voting Maze</h3>
-            <p>A guide to understanding your rights amid changing laws.</p>
-            
-            <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
-            <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
-          </section>
+            <section id="article-12">
+              <h3>After the Cameras Leave: Long-Term Crisis Recovery</h3>
+              <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
+            </section>
+        </section>
 
         <section id="alerts">
           <h2>Stay Informed. Stay Empowered.</h2>
             <p>Receive text messages with the news you want to know.</p>
             
             <form method="POST" action="https://wp.zybooks.com/form-viewer.php">
-              
+
+              <div class="form-name">
                 <label for="name">Name</label>
                 <input id="name" type="text" name="name" placeholder="Robin Neal" autocomplete="name" required>
+              </div>
               
-              
+              <div class="form-mobile">
                 <label for="mobile">Mobile</label>
                 <input id="mobile" type="tel" name="mobile" placeholder="123-456-7890" autocomplete="tel" required>
-
+              </div>
 
                 <fieldset>
                   <legend>Notification Preferences</legend>
@@ -151,21 +186,21 @@
                   <label for="financial">Financial</label>
                 </fieldset>
 
-              
                 <input type="submit" name="subscribe" value="Subscribe">
             </form>
         </section>
       </main>
 
-      <footer id="social">
-        <h2>Follow Us</h2>
-          <a href="#">Twitter/X</a>
-          <a href="#">Instagram</a>
-          <a href="#">YouTube</a>
-          <a href="#">TikTok</a>
-          <a href="#">LinkedIn</a>
-          
-          &copy; 2025 Civic Lens. All rights reserved.
+      <footer>
+        <section id="social">
+          <h2>Follow Us</h2>
+            <a href="#">Twitter/X</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">TikTok</a>
+            <a href="#">LinkedIn</a>
+        </section>
+          <p>&copy; 2025 Civic Lens. All rights reserved.</p>
       </footer>
         
   <script>
